@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>backsubmit</name>
+        <order/>
+        <script/>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-07 15:44:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c8b7357b475d611063853d8a436d43d9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>backsubmit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_c8b7357b475d611063853d8a436d43d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-08 02:20:36</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type/>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>d19cda97db91e5945dc32f17d49619d4</instance_id>
+        <instance_name>dev159004</instance_name>
+        <name>sys_script_client_c8b7357b475d611063853d8a436d43d9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client"><sys_script_client action="INSERT_OR_UPDATE"><active>true</active><applies_extended>false</applies_extended><condition/><description/><field/><global>true</global><isolate_script>true</isolate_script><messages/><name>backsubmit</name><order/><script/><sys_class_name>sys_script_client</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-07 15:44:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c8b7357b475d611063853d8a436d43d9</sys_id><sys_mod_count>5</sys_mod_count><sys_name>backsubmit</sys_name><sys_overrides/><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_script_client_c8b7357b475d611063853d8a436d43d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-08 02:20:36</sys_updated_on><table>x_58872_needit_needit</table><type/><ui_type>0</ui_type><view/></sys_script_client></record_update>]]></payload>
+        <payload_hash>469999455</payload_hash>
+        <record_name>backsubmit</record_name>
+        <reverted_from/>
+        <source>564de79f4795211063853d8a436d4310</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-08 02:20:37</sys_created_on>
+        <sys_id>a56984c84765a11063853d8a436d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186bf053d430000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-08 02:20:37</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>9d6984c85165a11061f336542adcfad3</update_guid>
+        <update_guid_history>9d6984c85165a11061f336542adcfad3:469999455,5d29c0c82565a110c8a5d527a3774e2a:1171155672,85a840885721a1107876f32254b360b9:-541148199,cfb8b9bbc05d6110b3339f7e527688f8:-2065207060,5f68bd7bf95d6110f99846f0257c4922:478260387,91c7357b6c5d6110a2f6849c7bae9356:151857171</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-08 02:21:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>3d991209b70b4b44820e863b507e4b51</sys_id>
+        <sys_metadata>c8b7357b475d611063853d8a436d43d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>backsubmit</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">3367d0674759211063853d8a436d4370</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_c8b7357b475d611063853d8a436d43d9</sys_update_name>
+        <sys_update_version display_value="sys_script_client_c8b7357b475d611063853d8a436d43d9">a56984c84765a11063853d8a436d43d4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-08 02:21:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
