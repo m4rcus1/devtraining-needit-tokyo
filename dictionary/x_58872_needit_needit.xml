@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="3367d0674759211063853d8a436d4370" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="target_field=percent_complete_target,target_threshold_colors=0:#32CD32;33:#7B68EE;66:#E6E6FA;90:#F0E68C,target_field=target&#13;&#10;&#13;&#10;&#13;&#10;" label="% compelete" max_length="15" name="compelete" type="percent_complete"/>
+        <element label="Target" max_length="20" name="target" type="decimal"/>
         <element label="New True/False" max_length="40" name="u_boolean_2" type="boolean"/>
         <element default="true" label="Click at checkbox to hide the field" max_length="40" name="u_boolean_3" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
