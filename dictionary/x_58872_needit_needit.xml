@@ -4,6 +4,13 @@
         <element label="Target" max_length="20" name="target" type="decimal"/>
         <element label="New True/False" max_length="40" name="u_boolean_2" type="boolean"/>
         <element default="true" label="Click at checkbox to hide the field" max_length="40" name="u_boolean_3" type="boolean"/>
+        <element choice="1" default="0" label="old_state" max_length="40" name="u_integer_1" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Requested" sequence="2" value="13"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Other_check" max_length="40" name="u_other_check" type="string"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_58872_needit_needit">state=2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>false</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+    g_form.setMandatory('description', false);
+    g_form.setReadOnly('short_description', false);
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    // get the sys_id of the current record
+    var sys_id = g_form.getUniqueValue();
+   
+    // create a GlideRecord object for the incident table
+    var gr = new GlideAjax('x_58872_needit.CallData1');
+    gr.addParam('sysparm_name', 'rState');
+    gr.addParam('sys_id', sys_id);
+
+    gr.getXMLAnswer(res);
+
+    function res(response) {
+		console.log(response)
+        if (response == 0) {
+            g_form.setMandatory('description', true);
+            g_form.setReadOnly('short_description', true);
+        }else{
+			g_form.setMandatory('description', false);
+			g_form.setReadOnly('short_description',false);
+		}
+    }
+
+
+    // if a record is found, retrieve the 'priority' value and set the field visibility based on that value
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Change state change something</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-14 09:31:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b552082472d691063853d8a436d43cf</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Change state change something</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_policy_9b552082472d691063853d8a436d43cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-15 08:21:28</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>
